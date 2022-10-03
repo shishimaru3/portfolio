@@ -19,20 +19,20 @@ $(function(){
 
 
 // BGM
-// {
-//   const bgm = new Audio('audio/LaNeigePoudreuse.m4a');
+{
+  const bgm = new Audio('audio/LaNeigePoudreuse.m4a');
 
-//   $('#play').on('click', function() {
-//     console.log('Play!');
-//     bgm.play();
-//     bgm.loop = true;
-//   });
-//   $('#stop').on('click', function(){
-//     console.log('Stop!');
-//     bgm.pause();
-//     bgm.currentTime = 0;
-//   });
-// }
+  $('#play').on('click', function() {
+    console.log('Play!');
+    bgm.play();
+    bgm.loop = true;
+  });
+  $('#stop').on('click', function(){
+    console.log('Stop!');
+    bgm.pause();
+    bgm.currentTime = 0;
+  });
+}
 
 
 

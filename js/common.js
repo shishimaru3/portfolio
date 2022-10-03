@@ -6,22 +6,22 @@ $('body').fadeIn(2500);
 
 
 // 降雪エフェクト
-// {
-//   $(function() {
-//     $(document).snowfall('clear');
-//     setTimeout(function(){
-//       $(document).snowfall({
-//         flakeCount: 20,
-//         flakeColor: '#eee',
-//         minSize: 0.5,
-//         maxSize: 7,
-//         minSpeed: 0.5,
-//         maxSpeed: 0.6,
-//         round: true
-//       });
-//     }, 1000);  
-//   });
-// }
+{
+  $(function() {
+    $(document).snowfall('clear');
+    setTimeout(function(){
+      $(document).snowfall({
+        flakeCount: 20,
+        flakeColor: '#eee',
+        minSize: 0.5,
+        maxSize: 7,
+        minSpeed: 0.5,
+        maxSpeed: 0.6,
+        round: true
+      });
+    }, 1000);  
+  });
+}
 
 
 
