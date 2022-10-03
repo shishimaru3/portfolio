@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <title>Shishimaru's Portfolio Site</title>
+</head>
+
+<body>
+    <div class="top-bg">
+      <img src="../img/top-img-white.jpg">
+    </div>
+  
+    <div class="all">
+      <header class="header">
+        <h2 class="header-logo">
+          <a href="../index.html">
+            <img src="../img/logo-white.png">
+          </a>
+        </h2>
+        <nav>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="works.html">Works</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="contact.html" class="selected">Contact</a>
+            </li>
+          </ul>
+          <ul class="header-icon-list">
+            <li class="header-icon-item">
+              <a href="https://twitter.com/__shishi_maru__" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="header-icon-item">
+              <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="header-icon-item">
+              <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+            </li>
+            <li class="header-icon-item">
+              <a href="https://mercari.com/jp/u/744005265" target="_blank">
+                <i class="fa-solid fa-shop"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sp-header-nav">
+          <span class="material-icons" id="open">menu</span>
+        </div>
+
+        <!-- ハンバーガーメニュー内 -->
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
+        <nav>
+          <ul class="sp-header-nav-list">
+            <li class="sp-header-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="works.html">Works</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="sp-header-icon-list">
+            <li class="sp-header-icon-item">
+              <a href="https://twitter.com/__shishi_maru__" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="https://mercari.com/jp/u/744005265" target="_blank">
+                <i class="fa-solid fa-shop"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="bgm-btn-area">
+            <div class="bgm-btn" id="play">on</div>
+            <div class="bgm-btn" id="stop">off</div>
+          </div>       
+        </nav>
+      </div>
+      </header>
+    
+      <main>
+        <section class="contact">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-msg">
+            ポートフォリオをご覧いただきありがとうございます。こちらのサイトやWebサイト制作に関するお問い合わせは、下記のフォームをご利用ください。また、演奏やギャラリー、手芸作品に関することなどでも、お気軽にお問い合わせください。
+          </p>
+    
+          <form class="contact-form" action="../contact.php" method="post">
+            <label class="box">
+              <p>Name:</p>
+              <input type="text" name="name" placeholder="お名前" value="">
+            </label>
+            <label class="box">
+              <p>E-mail:</p>
+              <input type="email" name="email" placeholder="メールアドレス" value="">
+            </label>
+            <label class="box">
+              <p>Message:</p>
+              <textarea name="message" placeholder="メッセージをご入力ください"></textarea>
+            </label>
+            <div class="btn">
+              <input type="submit" name="confirm" value="Send Message!">
+            </div>
+          </form>
+        </section>
+      </main>
+    
+      <footer class="footer">
+        <h2 class="footer-logo">
+          <a href="../index.html">
+            <img src="../img/logo-white.png">
+          </a>
+        </h2>
+        <nav>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="works.html">Works</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="contact.html" class="selected">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer-icon-list">
+            <li class="footer-icon-item">
+              <a href="https://twitter.com/__shishi_maru__" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="https://mercari.com/jp/u/744005265" target="_blank">
+                <i class="fa-solid fa-shop"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright">&copy;2022 shishimaru</p>
+      </footer>
+    </div>
+  
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/591fd32dda.js" crossorigin="anonymous"></script>  
+  <!-- jQuery本体 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- 非同期遷移 -->
+  <!-- <script src="js/barba.min.js"></script> -->
+  <!-- 降雪エフェクトのプラグイン -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+  <script src="../js/common.js"></script>
+</body>
+</html>

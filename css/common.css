@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+body {
+  font-size: 16px;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+  color: #333;
+  background-color: #eee;
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.top-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #eeeeee60 0 15%, #eee 100%);
+}
+
+.top-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.all {
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .top-bg {
+    height: 50vh;
+  }
+
+  .top-bg::after {
+    height: 50vh;
+  }
+}
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* --------------- header --------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #333;
+  z-index: 9999;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #33333385;
+  transition: all .5s;
+}
+
+.header-logo {
+  height: 85px;
+  padding-left: 16px;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-right: 30px;
+}
+
+.header-nav-item {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  padding-left: 50px;
+}
+
+.header-nav-item a {
+  color: #eee;
+  transition: all .2s ease-in-out;
+}
+
+.header-nav-item a:hover {
+  color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.header-nav-item a.selected {
+  color: gray;
+  border-bottom: 3px solid #eee;
+}
+
+.header-icon-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+.header-icon-item {
+  padding: 0 15px;
+}
+
+.header-icon-item a {
+  color: #eee;
+}
+
+.header-icon-item a:hover {
+  color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.header-icon-item .fa-brands,
+.header-icon-item .fa-solid {
+  font-size: 1.5rem;
+}
+
+.sp-header-nav {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 80px;
+  }
+
+  .header-logo {
+    height: 60px;
+  }
+
+  .header-nav-list {
+    display: none;
+  }
+  
+  .header-icon-list {
+    display: none;
+  }
+
+  .sp-header-nav {
+    display: block;
+  }
+
+  .sp-header-nav #open {
+    color: #eee;
+    font-size: 3rem;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  .sp-header-nav #open.hide {
+    display: none;
+  }
+
+  /* ----------------------------------------------------- */
+  /* --------------- ハンバーガーメニュー内 ---------------*/
+  /* ----------------------------------------------------- */
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0%;
+    height: 100vh;
+    background: rgba(255,255,255, 0.95);
+    text-align: center;
+    padding: 20% 0;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: opacity .5s, transform .5s;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .overlay #close {
+    position: fixed;
+    top: 0;
+    right: 16px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  .sp-header-nav-item {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    height: 12vh;
+    line-height: 12vh;
+  }
+
+  .sp-header-icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sp-header-icon-item {
+    font-size: 1.5rem;
+    line-height: 10vh;
+    padding: 0 15px;
+  }
+
+  .overlay .bgm-btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+  }
+  
+  .overlay .bgm-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 0 15px;
+    border: 1.5px solid;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+  }
+
+  .overlay .bgm-btn:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: #eee;
+    transition: all .2s ease-in-out;
+  }
+}
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* --------------- footer --------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+.footer {
+  width: 100vw;
+  margin: 50px auto 0;
+  background-color: #333;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 250px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-nav-item {
+  width: 20%;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 30px;
+}
+
+.footer-nav-item a {
+  color: #eee;
+  transition: all .2s ease-in-out;
+}
+
+.footer-nav-item a:hover {
+  color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.footer-nav-item a.selected {
+  color: gray;
+  border-bottom: 2px solid #eee;
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.footer-icon-item {
+  padding: 0 15px;
+}
+
+.footer-icon-item a {
+  color: #eee;
+  font-size: 1.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.footer-icon-item a:hover {
+  color: gray;
+  transition: all .2s ease-in-out;
+}
+
+.copyright {
+  color: #eee;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 1px;
+  padding: 30px 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-logo {
+    width: 180px;
+  }
+
+  .footer-nav-item {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* ---------------- btn ---------------- */
+/* ------------------------------------- */
+/* ------------------------------------- */
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0;
+}
+
+.btn a {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Dancing Script';
+  width: 300px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 5px 50px;
+  transition: all .2s ease-in-out;
+}
+
+.btn a:hover {
+  background-color: #333;
+  color: #eee;
+  transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .btn a {
+    font-size: 1.2rem;
+    width: 200px;
+  }
+}

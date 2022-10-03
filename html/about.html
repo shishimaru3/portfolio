@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <title>Shishimaru's Portfolio Site</title>
+</head>
+
+<body>
+  <div class="top-bg">
+    <img src="../img/top-img-blue.jpg" alt="トップ画像">
+  </div>
+  
+  <div class="all">
+    <header class="header">
+      <h2 class="header-logo">
+        <a href="../index.html">
+          <img src="../img/logo-white.png" alt="ロゴ画像">
+        </a>
+      </h2>
+      <nav>
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="about.html" class="selected">About</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="works.html">Works</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="header-icon-list">
+          <li class="header-icon-item">
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="header-icon-item">
+            <a href="https://twitter.com/__shishi_maru__" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="header-icon-item">
+            <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="header-icon-item">
+            <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+          </li>
+          <li class="header-icon-item">
+            <a href="https://mercari.com/jp/u/744005265" target="_blank">
+              <i class="fa-solid fa-shop"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sp-header-nav">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+
+      <!-- ハンバーガーメニュー内 -->
+      <div class="overlay">
+        <span class="material-icons" id="close">close</span>
+        <nav>
+          <ul class="sp-header-nav-list">
+            <li class="sp-header-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="works.html">Works</a>
+            </li>
+            <li class="sp-header-nav-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="sp-header-icon-list">
+            <li class="sp-header-icon-item">
+              <a href="https://twitter.com/__shishi_maru__" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+            </li>
+            <li class="sp-header-icon-item">
+              <a href="https://mercari.com/jp/u/744005265" target="_blank">
+                <i class="fa-solid fa-shop"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="bgm-btn-area">
+            <div class="bgm-btn" id="play">on</div>
+            <div class="bgm-btn" id="stop">off</div>
+          </div>       
+        </nav>
+      </div>
+    </header>
+  
+    <main>
+      <section class="profile">
+        <h2 class="section-title">Profile</h2>
+        <div class="prof-wrapper">
+          <div class="prof-left">
+            <div class="prof-img">
+              <img src="../img/prof-img1.jpg" alt="プロフィール画像" id="slideshow">
+            </div>
+            <h3 class="prof-title">Introduction</h3>
+            <p class="prof-text">
+              <!-- shishimaru&ensp;(白石&ensp;真美/しらいし&ensp;まみ)<br> -->
+              名前:&emsp;shishimaru&ensp;(獅子丸)<br>
+              出身:&emsp;大阪府<br>
+              仕事:&emsp;水泳指導員&ensp;兼&ensp;Webコーダー<br>
+              趣味:&emsp;楽器演奏(ピアノ,エレクトーン,ヴァイオリン),手芸(レジン,組紐etc),園芸(夏野菜のベランダ菜園のみ)etc...<br>
+            </p>
+          </div> 
+          <div class="prof-right">
+            <h3 class="prof-title">Career</h3>
+            <p class="prof-text">
+              京都外国語大学&ensp;外国語学部&ensp;イタリア語学科卒業<br>
+              大学在学中にイタリア･トリノへの語学留学経験あり<br>
+              高校/大学時は和食･イタリアンレストランで接客業<br>
+              薬品を扱う会社での営業事務アシスタントと、長野県佐久市での農業アルバイトを経て、現在は水泳指導員として働く(6年目)<br>
+              <br>
+              2022年4月よりWeb制作の勉強を開始<br>
+              現在は主にこちらのポートフォリオで実装したいことを一つ一つ調べて実装していきながら勉強しています
+            </p>
+            <!-- <h3 class="prof-title">Service</h3>
+            <p class="prof-text">
+              現在編集中です...<br>
+              <br>
+              <br>
+              <br>
+            </p> -->
+            <h3 class="prof-title">Language<small>※php及びWordPressは勉強し始めたばかりです</small></h3>
+            <div class="icons">
+              <div class="icon-item">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML</p>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-sass"></i>
+                <p>Sass</p>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>    
+              <div  class="icon-item">
+                <i class="fa-brands fa-square-js"></i>
+                <p>JS/JQ</p>
+              </div>       
+              <div  class="icon-item">
+                <i class="fa-brands fa-php"></i>
+                <p>php</p>
+              </div>       
+              <div  class="icon-item">
+                <i class="fa-brands fa-wordpress"></i>
+                <p>WordPress</p>
+              </div>       
+            </div>
+          </div>  
+        </div>
+      </section>
+  
+      <section class="favorite">
+        <h2 class="section-title">Favorite</h2>
+        <div class="favorite-wrapper">
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/music.jpg" alt="楽器の画像">
+              <p class="favorite-description">
+                <span>Music</span><br>
+                小さい頃からピアノ(最初の数年はエレクトーン)を習っており、どちらかと言えば聴くより弾くほうで音楽を楽しんでいます。趣味の範囲なので演奏活動等はしていませんが、細々とYoutubeに演奏動画を投稿しています(こちらのサイトに使っているBGMも、投稿動画の音声を使用しています)。社会人になってからはヴァイオリンも始め、一時期は小さなアマチュアオーケストラにも所属していました。                
+              </p>
+            </div>
+          </div>
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/nature.jpg" alt="自然の画像">
+              <p class="favorite-description">
+                <span>Nature</span><br>
+                自然を感じられる場所が好きです。子どもの頃は毎年海にキャンプに連れて行ってもらっていたこともあり、もともと海派で山にはあまり興味なかったのですが、大学時代にイタリアへ留学した際、山の上にある修道院へ登った時の眺めがすごく素敵で、山登りも楽しいと思えるようになりました。鍾乳洞なども素敵ですね！巡りたい場所が盛りだくさんです。
+              </p>
+            </div>
+          </div>
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/animal.jpg" alt="動物の画像">
+              <p class="favorite-description">
+                <span>Animals</span><br>
+                動物なら何でも…とまでは言えませんが、動物と触れ合うことが好きです。散歩している犬を見かけたら眺めてしまいますし、疲れているときには猫カフェなどでまったりしたくなります。海洋生物を見るのも好きです(怖いものもいっぱいですが…)。<br>
+                こちらのイメージは、今はもう天へ旅立ちましたが、実家で飼っていたパピヨンです。
+              </p>
+            </div>
+          </div>
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/italy.jpg" alt="イタリアの画像">
+              <p class="favorite-description">
+                <span>Italy</span><br>
+                高校2年生の時に、ヴェネツィアを舞台にしたアニメを見たことをきっかけに強い憧れを持ち、すぐにイタリア語を勉強し始め、イタリア語を専攻できる大学へ進みました。きっかけはヴェネツィアですが、トリノへの留学中、イタリア中部･南部にも旅行したことで、ゆったりとした時間の流れやあたたかい人柄、全体的な空気感がとても好きになりました。
+              </p>
+            </div>
+          </div>
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/garden.jpg" alt="野菜の画像">
+              <p class="favorite-description">
+                <span>Kitchen Garden</span><br>
+                夏の間だけ、家庭菜園を嗜みます。中学･高校の修学旅行でファームステイを経験し、大変ながらも楽しかった記憶から、社会人になって一度だけ長野へ農業のアルバイトにも行きました。その時の植物が育っていく様子がとても面白かったため、現在でも育てられる範囲でミニトマトやミニキュウリ、ピーマンやオクラなど夏野菜を育て、収穫を楽しんでいます。
+              </p>
+            </div>
+          </div>
+          <div class="favorite-item">
+            <div class="favorite-img">
+              <img src="../img/handmade.png" alt="手芸品の画像">
+              <p class="favorite-description">
+                <span>Handmade</span><br>
+                子どもの頃から細かい作業が好きで、よくマフラーやビーズアクセサリーを作っていました。現在でも、気が向いた時に手芸の時間を取ることがあります。手芸用品店にたまに立ち寄っては興味を引かれるものに挑戦しているので、全体的な完成度は高いとは言えませんが、綺麗にできたと思うものはメルカリで出品することもあります。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+            Go to Youtube
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <div class="btn">
+          <a href="gallery.html">
+            Go to Gallery
+          <i class="fa-solid fa-camera"></i>
+          </a>
+        </div>
+        <div class="btn">
+          <a href="https://mercari.com/jp/u/744005265" target="_blank">
+            Go to Mercari
+            <i class="fa-solid fa-shop"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    
+  
+    <footer class="footer">
+      <h2 class="footer-logo">
+        <a href="../index.html">
+          <img src="../img/logo-white.png" alt="ロゴ画像">
+        </a>
+      </h2>
+      <nav>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="about.html" class="selected">About</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="works.html">Works</a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer-icon-list">
+          <li class="footer-icon-item">
+            <a href="https://twitter.com/__shishi_maru__" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="https://youtube.com/channel/UCiXeiR_CnFGb_j3VjT-8LOg" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="gallery.html"><i class="fa-solid fa-camera"></i></a>
+          </li>
+          <li class="footer-icon-item">
+            <a href="https://mercari.com/jp/u/744005265" target="_blank">
+              <i class="fa-solid fa-shop"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy;2022 shishimaru</p>
+    </footer>
+  </div>
+  
+  
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/591fd32dda.js" crossorigin="anonymous"></script>
+  <!-- jQuery本体 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- 非同期遷移 -->
+  <!-- <script src="js/barba.min.js"></script> -->
+  <!-- 降雪エフェクトのプラグイン -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/about.js"></script>
+</body>
+</html>
